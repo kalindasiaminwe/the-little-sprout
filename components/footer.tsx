@@ -23,10 +23,6 @@ export default function Footer() {
               <div className="w-10 h-10 bg-green-950 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
                 <Instagram className="w-5 h-5" />
               </div>
-           
-              <div className="w-10 h-10 bg-green-950 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
-                <Linkedin className="w-5 h-5" />
-              </div>
             </div>
           </div>
 

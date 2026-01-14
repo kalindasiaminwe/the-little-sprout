@@ -1,6 +1,6 @@
 // fonts.ts or your font file
 import localFont from 'next/font/local';
-import { Merriweather } from 'next/font/google';
+import { Emilys_Candy} from 'next/font/google';
 
 export const navFont = localFont({
   src: '../../public/fonts/quentonserif-personal-use-only.otf',
@@ -14,6 +14,12 @@ export const navFont2 = localFont({
   display: 'swap',
   weight: '400',
   variable: '--font-nav',
+});
+
+export const emilysCandy = Emilys_Candy({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-emilys-candy',
 });
 
 

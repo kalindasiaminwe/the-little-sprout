@@ -9,7 +9,7 @@ export default function HowToOrder() {
           <div className="space-y-12">
             {/* Header */}
             <div className="space-y-4">
-              <h1 className="text-5xl font-serif text-gray-900 leading-tight">How to Order</h1>
+              <h1 className="text-5xl font-serif text-gray-900 leading-tight max-sm:text-4xl">How to Order</h1>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Ordering your favorite plants is simple and quick! Just follow these easy steps:
               </p>
