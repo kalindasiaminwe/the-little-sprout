@@ -1,16 +1,16 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react"
-import { navFont, navFont2 } from "./ui/fonts"
+import { emilysCandy, navFont } from "./ui/fonts"
 
 export default function Footer() {
   return (
     <footer className= {`${navFont.className} bg-[#081607] text-white" `}>
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
 
-              <span className={`${navFont2.className} text-2xl font-serif`}>The Little Sprout</span>
+              <span className={`${emilysCandy.className} text-2xl font-serif`}>The Little Sprout</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               We're passionate about bringing nature closer to you with healthy, handpicked plants. From indoor greens

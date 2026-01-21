@@ -36,7 +36,7 @@ export default function BestProduct() {
   };
 
   return (
-    <div className="bg-white px-4 sm:px-8 py-10 sm:py-20 max-w-7xl mx-auto">
+    <div className="bg-white px-4 max-sm:px-8 py-10 sm:py-20 max-w-7xl mx-auto">
       {/* Section Heading with buttons */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-12">
         <div className="text-center sm:text-left">
@@ -49,18 +49,13 @@ export default function BestProduct() {
             and function in one.
           </p>
         </div>
-        <div className="flex justify-center sm:justify-end space-x-3">
-          <button
-            onClick={prevSlide}
-            className="bg-green-900 text-white p-3 rounded-sm hover:bg-green-800"
-          >
-            <ChevronLeft />
-          </button>
+        <div className="flex justify-center sm:justify-end space-x-3 max-sm:hidden relative">
+
           <button
             onClick={nextSlide}
             className="bg-green-900 text-white p-3 rounded-sm hover:bg-green-800"
           >
-            <ChevronRight />
+            <p>View All</p>
           </button>
         </div>
       </div>

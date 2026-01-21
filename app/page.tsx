@@ -12,7 +12,7 @@ import Hero from "@/components/header";
 export default function Home() {
   return (
     <main className="bg-white">
-      <div className="pb-10" > 
+      <div className="md:pb-10 max-sm:pb-0" > 
         <Hero />      
       </div>
       <Mission />
