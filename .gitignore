@@ -19,11 +19,12 @@
 
 # production
 /build
+/public
 
 # misc
 .DS_Store
 *.pem
-global.d.ts
+
 
 # debug
 npm-debug.log*
