@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function HowToOrder() {
   return (
     <div className="min-h-screen bg-white max-sm:px-8">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-16 max-sm:pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-12">
@@ -60,7 +60,7 @@ export default function HowToOrder() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className=" p-8 lg:p-12">
+            <div className=" p-8 lg:p-12 max-sm:p-0">
               <Image
                 src="/images/hto.png"
                 alt="Various potted plants including palm and leafy plants arranged beautifully"

@@ -24,7 +24,7 @@ const Mission = () => {
         </p>
 
         
-        <button className="bg-[#081607] max-sm:bg-green-900 text-white px-6 py-3 mt-8 max-sm:mt-0 rounded hover:bg-green-700 transition duration-300 flex items-center gap-2 order-2 max-sm:order-2">
+        <button className="bg-[#081607] max-sm:bg-green-900 text-white px-6 py-3 mt-8 max-sm:mt-0 rounded hover:bg-green-700 transition duration-300 flex items-center gap-2 order-2 max-sm:items-center max-sm:mx-auto">
           About us <GoArrowUpRight />
         </button>
       </div>

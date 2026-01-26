@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className= {`${navFont.className} bg-[#081607] text-white" `}>
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -26,8 +26,10 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className="grid grid-cols-3 gap-6 lg:col-span-3">
+            
           {/* Information */}
-          <div className= "space-y-6 pt-10">
+          <div className= "space-y-6 pt-10 max-sm:pt-0 ">
             {/* <h3 className= {`${navFont.className} bg-[#081607] text-xl font-serif `}>Information</h3> */}
             <ul className="space-y-3">
               <li>
@@ -59,7 +61,7 @@ export default function Footer() {
           </div>
 
           {/* Support */}
-          <div className="space-y-6 pt-10">
+          <div className="space-y-6 pt-10 max-sm:pt-0">
             {/* <h3 className="text-xl font-serif">Support</h3> */}
             <ul className="space-y-3">
               <li>
@@ -86,7 +88,7 @@ export default function Footer() {
           </div>
 
           {/* Community */}
-          <div className="space-y-6 pt-10">
+          <div className="space-y-6 pt-10 max-sm:pt-0">
             {/* <h3 className="text-xl font-serif">Community</h3> */}
             <ul className="space-y-3">
               <li>
@@ -101,6 +103,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          </div>
+
+
         </div>
       </div>
 
