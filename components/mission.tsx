@@ -3,7 +3,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-4 md:p-10 max-sm:px-8 md:py-20 max-sm:pb-10 bg-[#D6EFD8] max-sm:bg-white max-w-7xl mx-auto rounded-sm">
+    <div className="grid md:grid-cols-2 gap-4 md:p-10 max-sm:px-8 md:py-20 max-sm:pb-10 bg-green-950/20 max-sm:bg-white max-w-7xl mx-auto rounded-sm">
       {/* Left section */}
       <div className="flex flex-col">
         <h2 className="text-gray-900 font-bold md:text-5xl max-sm:text-2xl sm:text-2xl max-sm:text-center max-sm:text-green-900">

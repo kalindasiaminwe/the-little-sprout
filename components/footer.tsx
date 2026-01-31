@@ -3,14 +3,14 @@ import { emilysCandy, navFont } from "./ui/fonts"
 
 export default function Footer() {
   return (
-    <footer className= {`${navFont.className} bg-[#081607] text-white" `}>
-      <div className="max-w-7xl mx-auto px-6 py-16">
+    <footer className= {` bg-[#081607] text-white" `}>
+      <div className="max-w-7xl mx-auto px-6 py-16 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
 
-              <span className={`${emilysCandy.className} text-2xl font-serif`}>The Little Sprout</span>
+              <span className={`${emilysCandy.className} text-gray-300 text-2xl font-serif`}>The Little Sprout</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               We're passionate about bringing nature closer to you with healthy, handpicked plants. From indoor greens
@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-6 lg:col-span-3">
+          <div className="grid grid-cols-3 gap-6 lg:col-span-3 md:justify-end">
             
           {/* Information */}
           <div className= "space-y-6 pt-10 max-sm:pt-0 ">
@@ -112,7 +112,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-6">
-          <p className="text-center text-gray-400">© 2025 The Little Sprout. All rights reserved</p>
+          <p className="text-center text-gray-400 text-sm max-sm:text-xs">© 2025 The Little Sprout. All rights reserved</p>
         </div>
       </div>
     </footer>

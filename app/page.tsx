@@ -4,10 +4,11 @@ import Image from "next/image";
 import { Divide } from "lucide-react";
 import Mission from "@/components/mission";
 import Influence from "@/components/influence";
-import BestProduct from "@/components/best-product";
+
 import HowToOrder from "@/components/how-to-order";
 import Footer from "@/components/footer";
 import Hero from "@/components/header";
+import FeaturedPlants from "@/components/best-product";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Hero />      
       </div>
       <Mission />
-      <BestProduct />
+      <FeaturedPlants />
       <Influence />      
       <HowToOrder />
       <Footer />
