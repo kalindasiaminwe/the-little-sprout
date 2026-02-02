@@ -30,7 +30,7 @@ const Hero = () => {
               </Button>
               </Link>
             </div>
-            <div className="flex gap-8 pt-4 max-sm:text-center max-sm:pt-0">
+            <div className="flex gap-8 pt-4 max-sm:text-center max-sm:pt-0 max-sm:hidden">
               <div>
                 <div className="text-2xl max-sm:text-xl font-bold text-green-950">30+</div>
                 <div className="text-sm max-sm:text-xs text-gray-800">Plant Varieties</div>
@@ -68,13 +68,18 @@ const Hero = () => {
 
             {/* mobile phones buttons*/}
              <div className="flex flex-wrap gap-4 max-sm:justify-center md:hidden">
-              <button  className=" text-gray-900 border-green-900 border-2 p-2 rounded-md">
+
+              <Link href="/shop">
+              <Button  size="lg" className="gap-2">
                 Shop Plants
                 <ArrowRight className="h-4 w-4" />
-              </button>
-              <button className="text-gray-900 border-green-900 border-2 p-2 rounded-md" >
+              </Button>
+              </Link>
+              <Link href="/care-guides">
+              <Button variant="outline" size="lg">
                 Care Guides
-              </button>
+              </Button>
+              </Link>
             </div>
           </div>
         </div>

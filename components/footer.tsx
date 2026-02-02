@@ -1,120 +1,152 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react"
-import { emilysCandy, navFont } from "./ui/fonts"
+"use client";
+
+import Link from "next/link";
+import { Leaf, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
+import { emilysCandy } from '@/components/ui/fonts'; // make sure you import your font
 
 export default function Footer() {
   return (
-    <footer className= {` bg-[#081607] text-white" `}>
-      <div className="max-w-7xl mx-auto px-6 py-16 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand Section */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-
-              <span className={`${emilysCandy.className} text-gray-300 text-2xl font-serif`}>The Little Sprout</span>
+    <footer className="max-w-7xl mx-auto px-6  bg-card border-t border-border">
+      <div className="container py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo & Social */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <span className={`${emilysCandy.className} text-gray-900 text-2xl font-serif`}>
+                The Little Sprout
+              </span>
             </div>
-            <p className="text-gray-300 leading-relaxed">
-              We're passionate about bringing nature closer to you with healthy, handpicked plants. From indoor greens
-              to garden favorites, we help you grow your perfect green space.
+            <p className="text-sm text-muted-foreground">
+              Bringing nature into homes since 2024. Quality plants, expert care, 
+              and a passion for green living.
             </p>
             <div className="flex gap-4">
-              <div className="w-10 h-10 bg-green-950 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
-                <Facebook className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 bg-green-950 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
-                <Instagram className="w-5 h-5" />
-              </div>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
           <div className="grid grid-cols-3 gap-6 lg:col-span-3 md:justify-end">
-            
-          {/* Information */}
-          <div className= "space-y-6 pt-10 max-sm:pt-0 ">
-            {/* <h3 className= {`${navFont.className} bg-[#081607] text-xl font-serif `}>Information</h3> */}
-            <ul className="space-y-3">
+          {/* Shop Links */}
+          <div>
+            <h4 className="font-semibold text-card-foreground mb-4">Shop</h4>
+            <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Shop
-                </a>
+                <Link href="/shop/all-plants" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  All Plants
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Blog
-                </a>
+                <Link href="/shop/bestsellers" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Bestsellers
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Portfolio
-                </a>
+                <Link href="/shop/new-arrivals" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  New Arrivals
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/shop/bundles" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Plant Bundles
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Support Links */}
+          <div>
+            <h4 className="font-semibold text-card-foreground mb-4">Support</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/care-guides" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Care Guides
+                </Link>
+              </li>
+              <li>
+                <Link href="/faqs" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link href="/shipping-info" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Shipping Info
+                </Link>
+              </li>
+              <li>
+                <Link href="/returns" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Returns
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/about-us" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div className="space-y-6 pt-10 max-sm:pt-0">
-            {/* <h3 className="text-xl font-serif">Support</h3> */}
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Account
-                </a>
+                <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Blog
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Support Center
-                </a>
+                <Link href="/sustainability" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Sustainability
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Terms and Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Community */}
-          <div className="space-y-6 pt-10 max-sm:pt-0">
-            {/* <h3 className="text-xl font-serif">Community</h3> */}
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Refer A Friend
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Gift Card
-                </a>
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           </div>
-
-
         </div>
-      </div>
 
-      {/* Copyright */}
-      <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <p className="text-center text-gray-400 text-sm max-sm:text-xs">© 2025 The Little Sprout. All rights reserved</p>
+        <Separator className="my-8" />
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+          <p>© 2024 The Little Sprout. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="hover:text-primary transition-colors">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

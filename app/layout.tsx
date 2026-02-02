@@ -3,6 +3,7 @@ import "./globals.css";
 import { merriweather } from "@/components/ui/fonts";
 import Navbar from "@/components/navbar";
 import { Providers } from "./providers";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "The Little Sprout",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

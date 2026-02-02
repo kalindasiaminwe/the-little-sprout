@@ -20,7 +20,7 @@ export default function Home() {
       <FeaturedPlants />
       <Influence />      
       <HowToOrder />
-      <Footer />
+      
       
     </main>
   );

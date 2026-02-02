@@ -31,7 +31,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, 25vw"
           />
-          <div className="absolute top-3 left-3">
+          <div className="absolute top-3 left-3 max-sm:hidden">
             <span
               className={`inline-block rounded-full px-3 py-1 text-xs font-medium ${careLevelColors[plant.careLevel]}`}
             >
@@ -45,17 +45,17 @@ const PlantCard = ({ plant }: PlantCardProps) => {
 
       <div className="p-4">
         <Link href={`/plants/${plant.id}`}>
-          <h3 className="font-display text-lg font-semibold text-gray-700 group-hover:text-primary transition-colors">
+          <h3 className="font-display text-lg max-sm:text-sm font-semibold text-gray-700 group-hover:text-primary transition-colors">
             {plant.name}
           </h3>
-          <p className="text-sm italic text-muted-foreground">
+          <p className="text-sm italic text-muted-foreground max-sm:text-xs">
             {plant.scientificName}
           </p>
         </Link>
 
         <div className="mt-3 flex items-center gap-4 text-xs text-muted-foreground">
           <span className="flex items-center gap-1">
-            <Sun className="h-3 w-3" />
+            <Sun className="h-3 w-3 " />
             {plant.light.split(" ")[0]}
           </span>
           <span className="flex items-center gap-1">
@@ -65,12 +65,12 @@ const PlantCard = ({ plant }: PlantCardProps) => {
         </div>
 
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-xl font-display font-semibold text-primary">
+          <span className="text-xl max-sm:text-xs font-display font-semibold text-primary">
             ZMW{plant.price}
           </span>
           <Button
             size="sm"
-            className="rounded-full"
+            className="rounded-full max-sm:text-xs"
             onClick={(e) => {
               e.preventDefault();
               addToCart(plant);

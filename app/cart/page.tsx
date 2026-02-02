@@ -35,19 +35,19 @@ const Cart = () => {
   }
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 max-w-7xl mx-auto md:p-15">
       <div className="container mx-auto px-4">
-        <h1 className="font-display text-4xl font-bold text-foreground mb-8">
+        <h1 className="font-display text-4xl max-sm:text-2xl font-bold text-foreground mb-8">
           Your Cart
         </h1>
 
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Cart Items */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-4 ">
             {items.map(({ plant, quantity }) => (
               <div
                 key={plant.id}
-                className="flex gap-4 rounded-2xl bg-card p-4 shadow-botanical"
+                className="flex gap-4 rounded-2xl  p-4 shadow-md bg-yellow-200/20"
               >
                 <Link href={`/plants/${plant.id}`} className="flex-shrink-0">
                   <Image
@@ -99,8 +99,8 @@ const Cart = () => {
                         <Plus className="h-3 w-3" />
                       </Button>
                     </div>
-                    <span className="font-display font-semibold text-primary text-lg">
-                      ${(plant.price * quantity).toFixed(2)}
+                    <span className="font-display font-semibold text-primary text-lg max-sm:text-base">
+                      ZMW{(plant.price * quantity).toFixed(2)}
                     </span>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const Cart = () => {
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Subtotal</span>
-                  <span className="font-medium">${totalPrice.toFixed(2)}</span>
+                  <span className="font-medium">ZMW{totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Shipping</span>
@@ -135,20 +135,20 @@ const Cart = () => {
                     {totalPrice >= 50 ? (
                       <span className="text-primary">Free</span>
                     ) : (
-                      "$5.99"
+                      "ZMW5.99"
                     )}
                   </span>
                 </div>
                 {totalPrice < 50 && (
-                  <p className="text-xs text-accent">
-                    Add ${(50 - totalPrice).toFixed(2)} more for free shipping!
+                  <p className="text-xs text-gray-700">
+                    Add ZMW{(50 - totalPrice).toFixed(2)} more for free shipping
                   </p>
                 )}
                 <div className="border-t border-border pt-3">
                   <div className="flex justify-between text-lg font-display font-bold">
                     <span>Total</span>
                     <span className="text-primary">
-                      ${(totalPrice + (totalPrice >= 50 ? 0 : 5.99)).toFixed(2)}
+                      ZMW{(totalPrice + (totalPrice >= 50 ? 0 : 5.99)).toFixed(2)}
                     </span>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ const Cart = () => {
               </Button>
 
               <Link href="/shop" className="block mt-4">
-                <Button variant="ghost" className="w-full">
+                <Button variant="accent" className="w-full">
                   Continue Shopping
                 </Button>
               </Link>

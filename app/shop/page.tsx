@@ -28,10 +28,10 @@ export default function ShopPage() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="font-display text-4xl font-bold text-foreground lg:text-5xl">
+          <h1 className="font-display text-4xl max-sm:text-3xl font-bold text-foreground lg:text-5xl">
             Shop Plants
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-muted-foreground max-sm:text-md max-sm:mt-2">
             Find your perfect green companion
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function ShopPage() {
         </p>
 
         {/* Plants Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 max-sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredPlants.map((plant) => (
             <PlantCard key={plant.id} plant={plant} />
           ))}

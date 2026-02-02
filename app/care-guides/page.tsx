@@ -14,10 +14,10 @@ const CareGuides = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="font-display text-4xl font-bold text-foreground lg:text-5xl">
+          <h1 className="font-display text-4xl max-sm:text-3xl font-bold text-foreground lg:text-5xl">
             Plant Care Guides
           </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 max-sm:mt-2 max-w-2xl mx-auto text-lg max-sm:text-md text-muted-foreground">
             Everything you need to keep your plants happy and thriving. 
             From watering basics to expert tips, we've got you covered.
           </p>
