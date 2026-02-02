@@ -3,8 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
-
-import { emilysCandy, navFont } from "./ui/fonts";
 import { useCart } from "@/app/context/CartContext";
 import { Button } from "./ui/button";
 
