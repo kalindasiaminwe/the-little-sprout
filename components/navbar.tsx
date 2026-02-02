@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { Button } from "./ui/button";
+import { emilysCandy } from "./ui/fonts";
 
 export default function Navbar() {
   const { totalItems } = useCart();
