@@ -12,7 +12,7 @@ import FeaturedPlants from "@/components/best-product";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-white ">
       <div className="md:pb-10 max-sm:pb-0" > 
         <Hero />      
       </div>

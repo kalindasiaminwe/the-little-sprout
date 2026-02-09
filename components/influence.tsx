@@ -7,7 +7,7 @@ const Influence = () => {
   return (
     <div className=" max-w-7xl mx-auto rounded-sm flex flex-col items-center justify-center md:p-15 max-sm:p-8  pb-20 bg-yellow-200/20">
       
-        <div className="container mx-auto px-4 text-center">
+        <div className="container  mx-auto px-4 text-center">
           <h2 className="font-display text-4xl font-bold mb-4">
             New to Plant Parenting?
           </h2>

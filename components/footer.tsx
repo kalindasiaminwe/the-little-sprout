@@ -7,7 +7,7 @@ import { emilysCandy } from '@/components/ui/fonts'; // make sure you import you
 
 export default function Footer() {
   return (
-    <footer className="max-w-7xl mx-auto px-6  bg-card border-t border-border">
+    <footer className="max-w-7xl mx-auto px-6 max-sm:px-8  bg-card border-t border-border">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Social */}

@@ -21,7 +21,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   };
 
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-card shadow-lg transition-all duration-300 hover:shadow-hover hover:-translate-y-1">
+    <div className="group relative overflow-hidden rounded-2xl max-sm:rounded bg-card shadow-lg transition-all duration-300 hover:shadow-hover hover:-translate-y-1">
       <Link href={`/plants/${plant.id}`} className="block">
         <div className="relative aspect-[5/5] overflow-hidden">
           <Image

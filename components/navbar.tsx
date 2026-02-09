@@ -79,8 +79,8 @@ export default function Navbar() {
         className={`${emilysCandy.className} flex items-center justify-center sm:justify-end gap-3`}
       >
         <Link href="/cart">
-          <Button variant="ghost" size="icon" className="relative">
-            <ShoppingCart className="h-5 w-5" />
+          <Button variant="ghost"  size="lg" className="relative ">
+            <ShoppingCart />
             {totalItems > 0 && (
               <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-xs font-semibold text-accent-foreground">
                 {totalItems}
