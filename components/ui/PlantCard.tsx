@@ -16,8 +16,8 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   const { addToCart } = useCart();
 
   const careLevelColors: Record<Plant["careLevel"], string> = {
-    easy: "bg-sage-light text-sage-dark",
-    moderate: "bg-terracotta-light text-terracotta-dark",
+    easy: "bg-green-200/20 text-green-800",
+    moderate: "bg-yellow-200/20 text-amber-800",
     expert: "bg-accent/20 text-accent",
   };
 

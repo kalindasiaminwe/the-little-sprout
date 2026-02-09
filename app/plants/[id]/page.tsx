@@ -21,8 +21,8 @@ import { useCart } from "@/app/context/CartContext";
 import { toast } from "sonner";
 
 const careLevelColors: Record<string, string> = {
-  easy: "bg-sage-light text-sage-dark",
-  moderate: "bg-terracotta-light text-terracotta-dark",
+  easy: "bg-green-200/20 text-green-800",
+  moderate: "bg-yellow-200/20 text-amber-800",
   expert: "bg-accent/20 text-accent",
 };
 
@@ -37,7 +37,7 @@ export default function PlantDetail() {
 
   if (!plant) {
     return (
-      <div className="container mx-auto px-4 py-20 text-center">
+      <div className="container mx-auto px-4 py-20 text-center text-amber-">
         <h1 className="font-display text-2xl font-bold">Plant not found</h1>
         <Link href="/shop">
           <Button variant="outline" className="mt-4">
@@ -89,7 +89,6 @@ export default function PlantDetail() {
               alt={plant.name}
               fill
               className="object-cover"
-              
             />
             <div className="absolute top-4 left-4">
               <span
@@ -139,7 +138,7 @@ export default function PlantDetail() {
                 >
                   <Minus />
                 </Button>
-                
+
                 <span className="w-10 text-center">{quantity}</span>
                 <Button
                   variant="ghost"
