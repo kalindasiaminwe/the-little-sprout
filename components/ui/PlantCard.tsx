@@ -6,6 +6,7 @@ import { Plus, Droplets, Sun } from "lucide-react";
 import { Plant } from "../data/plants";
 import { useCart } from "@/app/context/CartContext";
 import { Button } from "./button";
+import { toast } from "sonner";
 
 interface PlantCardProps {
   plant: Plant;
@@ -74,6 +75,9 @@ const PlantCard = ({ plant }: PlantCardProps) => {
             onClick={(e) => {
               e.preventDefault();
               addToCart(plant);
+              toast.success("Plant added to cart 🌱", {
+                description: `${plant.name} has been added to your cart`,
+              });
             }}
           >
             <Plus className="h-4 w-4 mr-1" />

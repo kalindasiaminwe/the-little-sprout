@@ -5,6 +5,7 @@ import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { plants } from "@/components/data/plants";
 import PlantCard from "@/components/ui/PlantCard";
+import { toast } from "sonner";
 
 
 export default function ShopPage() {
@@ -24,7 +25,7 @@ export default function ShopPage() {
   });
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -35,6 +36,7 @@ export default function ShopPage() {
             Find your perfect green companion
           </p>
         </div>
+
 
         {/* Filters */}
         <div className="mb-8 flex flex-wrap items-center gap-4">

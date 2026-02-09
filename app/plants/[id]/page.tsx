@@ -18,6 +18,7 @@ import { plants } from "@/components/data/plants";
 import PlantCard from "@/components/ui/PlantCard";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/app/context/CartContext";
+import { toast } from "sonner";
 
 const careLevelColors: Record<string, string> = {
   easy: "bg-sage-light text-sage-dark",
@@ -56,8 +57,15 @@ export default function PlantDetail() {
     for (let i = 0; i < quantity; i++) {
       addToCart(plant);
     }
+
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
+    toast.success("Plant added to cart 🌱", {
+      description:
+        quantity === 1
+          ? `${plant.name} has been added to your cart`
+          : `${quantity} × ${plant.name} have been added to your cart`,
+    });
   };
 
   return (
