@@ -122,10 +122,10 @@ export default function PlantDetail() {
             </div>
 
             {/* Care info */}
-            <div className="grid grid-cols-3 gap-4 rounded-2xl bg-card p-6 shadow-botanical">
-              <CareItem icon={<Sun />} label="Light" value={plant.light} />
-              <CareItem icon={<Droplets />} label="Water" value={plant.water} />
-              <CareItem icon={<Leaf />} label="Care" value={plant.careLevel} />
+            <div className="grid grid-cols-3 gap-4 rounded-2xl bg-card p-6 shadow-botanical ">
+              <CareItem icon={<Sun className="text-muted-foreground"/>} label="Light" value={plant.light} />
+              <CareItem icon={<Droplets className="text-muted-foreground"/>} label="Water" value={plant.water} />
+              <CareItem icon={<Leaf className="text-muted-foreground"/>} label="Care" value={plant.careLevel} />
             </div>
 
             {/* Quantity */}
