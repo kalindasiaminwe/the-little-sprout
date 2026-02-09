@@ -69,7 +69,7 @@ export default function PlantDetail() {
   };
 
   return (
-    <div className="min-h-screen py-10 max-w-7xl mx-auto">
+    <div className="min-h-screen py-10 max-w-7xl mx-auto ">
       <div className="container mx-auto px-4">
         {/* Breadcrumb */}
         <Link
@@ -81,7 +81,7 @@ export default function PlantDetail() {
         </Link>
 
         {/* Details */}
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-2 max-sm:px-4 max-sm:gap-6 ">
           {/* Image */}
           <div className="relative aspect-square overflow-hidden rounded-3xl bg-sage-light/30">
             <Image
@@ -89,6 +89,7 @@ export default function PlantDetail() {
               alt={plant.name}
               fill
               className="object-cover"
+              
             />
             <div className="absolute top-4 left-4">
               <span
@@ -105,7 +106,7 @@ export default function PlantDetail() {
               <p className="text-sm font-medium uppercase tracking-wide text-accent">
                 {plant.category}
               </p>
-              <h1 className="mt-2 font-display text-4xl font-bold">
+              <h1 className="mt-2 font-display text-4xl max-sm:text-2xl font-bold">
                 {plant.name}
               </h1>
               <p className="italic text-muted-foreground">
@@ -113,11 +114,11 @@ export default function PlantDetail() {
               </p>
             </div>
 
-            <p className="text-lg text-foreground/80">
+            <p className="text-lg max-sm:text-md text-foreground/80">
               {plant.description}
             </p>
 
-            <div className="text-4xl font-display font-bold text-primary">
+            <div className="text-4xl max-sm:text-2xl font-display font-bold text-primary">
               ZMW {plant.price}
             </div>
 
@@ -129,8 +130,8 @@ export default function PlantDetail() {
             </div>
 
             {/* Quantity */}
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-2 rounded-full border p-1">
+            <div className="flex flex-wrap items-center gap-4 max-sm:flex-nowrap max-sm:gap-2 max-sm:justify-between">
+              <div className="flex items-center gap-2 rounded-full border p-1 max-sm:gap-0 max-sm:px-0">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -138,6 +139,7 @@ export default function PlantDetail() {
                 >
                   <Minus />
                 </Button>
+                
                 <span className="w-10 text-center">{quantity}</span>
                 <Button
                   variant="ghost"
@@ -174,7 +176,7 @@ export default function PlantDetail() {
             <h2 className="mb-8 font-display text-2xl font-bold">
               You might also like
             </h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 max-sm:grid-cols-2 lg:grid-cols-3 ">
               {relatedPlants.map((p) => (
                 <PlantCard key={p.id} plant={p} />
               ))}
